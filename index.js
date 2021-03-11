@@ -11,6 +11,10 @@ const totalValue = (obj) => {
 
 const cloneArray = (array) => [...array];
 
+const test = () => {
+  return true;
+}
+
 module.exports = {
   sum,
   multiply,
