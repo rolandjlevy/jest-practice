@@ -2,7 +2,8 @@ const {
   sum, 
   multiply,
   totalValue,
-  cloneArray
+  cloneArray,
+  validNumber
 } = require('./index');
 
 test('adds 1 + 2 to equal 3', () => {
@@ -31,4 +32,16 @@ test('gets clone of array', () => {
   const array = [1, 2, 3, 4, 5];
   const result = cloneArray(array);
   expect(result).toEqual(array);
+});
+
+test('gets valid number', () => {
+  const num = 5;
+  const result = validNumber(num);
+  expect(result).toBeTruthy();
+});
+
+test('gets valid number', () => {
+  const num = 'h';
+  const result = validNumber(num);
+  expect(result).toBeFalsy()
 });

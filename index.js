@@ -11,13 +11,12 @@ const totalValue = (obj) => {
 
 const cloneArray = (array) => [...array];
 
-const test = () => {
-  return true;
-}
+const validNumber = (n) => !isNaN(n);
 
 module.exports = {
   sum,
   multiply,
   totalValue,
-  cloneArray
+  cloneArray,
+  validNumber
 };
