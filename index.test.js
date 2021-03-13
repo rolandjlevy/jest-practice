@@ -41,7 +41,7 @@ test('gets valid number', () => {
 });
 
 test('gets valid number', () => {
-  const num = 'h';
+  const num = 'hello';
   const result = validNumber(num);
   expect(result).toBeFalsy()
 });

@@ -1,4 +1,4 @@
-# Jest practice
+# Jest practice - node.js
 
 > Reference
 - https://jestjs.io
